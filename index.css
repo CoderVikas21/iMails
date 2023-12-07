@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  width: 100%;
+  height: 100vh;
+  white-space: pre-wrap;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(250, 236, 236);
+  margin: auto;
+  width: 70vw;
+  min-height: 100vh;
+  border: 1px solid black;
+}
+.navbar{
+    background-color: rgb(166, 165, 165);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.left p{
+  font-weight: bold;
+}
+.left img{
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.right ul{
+  display: flex; 
+}
+.right ul li{
+    list-style: none;
+    padding: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+li button{
+  font-size: 15px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 5px;
+}
+li button:hover{
+  background-color: rgb(70, 68, 68);
+}
+
+.card{
+  width: 100%;
+  height: 85vh;
+}
+.card span{
+  margin: 5px;
+  font-size: 25px;
+}
+.card input{
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+.card button{
+  margin: 20px 0px 0px 80px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px 15px;
+}
+.card p{
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top:10px ;
+}
+.result{
+  font-size: 30px;
+  margin-left:50px ;
+  margin-top:10px ;
+}
+.result::first-letter{
+  text-transform: uppercase;
+}
+.spinner {
+  margin: 50px 0 0 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%,#474bff);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+  animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+  to {
+     transform: rotate(1turn);
+  }
+}
+
+.footer{
+  background-color: rgb(166, 165, 165);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight:bold;
+}
